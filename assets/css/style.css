@@ -2137,3 +2137,23 @@ textarea.form-input::-webkit-resizer {
   }
 
 }
+.skill-list-two-col{
+  display: flex;
+  width: 100%;
+  gap: 30px;
+}
+.skill-list-two-col .skills-list{
+  width: 50%;
+}
+@media (max-width: 425px) {
+  
+  .skill-list-two-col{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    
+  }
+  .skill-list-two-col .skills-list{
+    width: 100%;
+  }
+}
