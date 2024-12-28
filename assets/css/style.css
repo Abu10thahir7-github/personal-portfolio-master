@@ -148,7 +148,9 @@ body {
   background: var(--smoky-black);
 }
 
-
+.avatar-box img{
+  border-radius: 25px;
+}
 
 
 
@@ -1017,7 +1019,7 @@ main {
 .project-list {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 30px;
+  gap: 65px;
   margin-bottom: 10px;
 }
 
