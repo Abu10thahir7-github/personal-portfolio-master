@@ -541,7 +541,7 @@ main {
 
 
 /**
- * #service 
+ * #service
  */
 
 .service {
@@ -601,7 +601,7 @@ main {
 
 
 /**
- * #testimonials 
+ * #testimonials
  */
 
 .testimonials {
@@ -783,7 +783,7 @@ main {
 
 
 /**
- * #clients 
+ * #clients
  */
 
 .clients {
@@ -834,7 +834,7 @@ main {
 
 
 /**
- * education and experience 
+ * education and experience
  */
 
 .timeline {
@@ -903,7 +903,7 @@ main {
 
 
 /**
- * skills 
+ * skills
  */
 
 .skills-title {
@@ -1379,7 +1379,7 @@ textarea.form-input::-webkit-resizer {
 
 
   /**
-   * #PORTFOLIO, BLOG 
+   * #PORTFOLIO, BLOG
    */
 
   .project-img,
@@ -1901,7 +1901,7 @@ textarea.form-input::-webkit-resizer {
 
 
   /**
-   * MAIN 
+   * MAIN
    */
 
   main {
@@ -2148,14 +2148,32 @@ textarea.form-input::-webkit-resizer {
   width: 50%;
 }
 @media (max-width: 425px) {
-  
+
   .skill-list-two-col{
     display: flex;
     width: 100%;
     flex-direction: column;
-    
+
   }
   .skill-list-two-col .skills-list{
     width: 100%;
   }
+}
+.experience-company-detail{
+
+}
+.timeline-item img{
+ border-radius: 50%;
+ width: 50px;
+ height: 50px;
+ object-fit: cover;
+}
+.timeline-item a{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.timeline-item .company-logo{
+      text-decoration: underline;
+    color: var(--orange-yellow-crayola);
 }
