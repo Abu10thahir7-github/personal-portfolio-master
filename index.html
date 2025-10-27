@@ -45,6 +45,29 @@
 
 <body>
 
+  <!-- Animated Background Elements -->
+  <div class="floating-particles">
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+  </div>
+
+  <div class="geometric-shapes">
+    <div class="shape"></div>
+    <div class="shape"></div>
+    <div class="shape"></div>
+    <div class="shape"></div>
+  </div>
+
+  <div class="pulsing-orbs">
+    <div class="orb"></div>
+    <div class="orb"></div>
+    <div class="orb"></div>
+  </div>
+
   <!--
     - #MAIN
   -->
@@ -111,19 +134,6 @@
 
           </li>
 
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="calendar-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Birthday</p>
-
-              <time datetime="1982-06-23">9 November, 2005</time>
-            </div>
-
-          </li>
 
           <li class="contact-item">
 
@@ -486,6 +496,17 @@
               </p>
 
             </li>
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Sreenarayanaguru Open University (SGOU) </h4>
+
+              <span>2025 — Present</span>
+
+              <p class="timeline-text">
+                BCA (Bachelor of Computer Applications)
+              </p>
+
+            </li>
 
 
           </ol>
@@ -549,7 +570,7 @@
               <h4 class="h4 timeline-item-title">Frontend Developer </h4>
 
               <span>2025 JUL — Present</span>
-              <span class="experience-company-detail">Giftasy – Personalized Gifts E-Commerce Brand | <a class="company-logo" href="https://www.giftasy.in" target="_blank"><img src="https://res.cloudinary.com/dcrf52w3g/image/upload/v1755207772/Screenshot_2025-08-15_030923_ja8kak.png" alt="giftasy" width="50">giftasy.in</a></span>
+              <a class="primary-color" href="https://www.giftasy.in" target="_blank class="experience-company-detail">giftasy.in – Personalized Gifts E-Commerce Brand | <a class="company-logo" href="https://www.giftasy.in" target="_blank"><img src="assets/images/Giftasylogo.svg" alt="giftasy" width="50"></a></a>
 
 
               <p class="timeline-text">
@@ -599,135 +620,328 @@
         </section>
 
         <section class="skill">
+          <h3 class="h3 skills-title">My Skills</h3>
 
-          <h3 class="h3 skills-title">My skills</h3>
-          <div class="skill-list-two-col">
+          <div class="skills-container">
 
-            <ul class="skills-list content-card">
-
-              <li class="skills-item">
-
-                <div class="title-wrapper">
-                  <h5 class="h5">HTML5/CSS3</h5>
-                  <data value="80">99%</data>
+            <!-- Frontend Development -->
+            <div class="skill-category">
+              <div class="category-header">
+                <div class="category-icon">
+                  <ion-icon name="code-slash-outline"></ion-icon>
+                </div>
+                <h4 class="category-title">Frontend Development</h4>
+              </div>
+              <div class="skills-grid">
+                <div class="skill-card">
+                  <div class="skill-icon">
+                    <ion-icon name="logo-html5"></ion-icon>
+                  </div>
+                  <div class="skill-content">
+                    <h5 class="skill-name">HTML5</h5>
+                    <div class="skill-level">
+                      <div class="skill-bar">
+                        <div class="skill-progress" data-width="95%"></div>
+                      </div>
+                      <span class="skill-percentage">95%</span>
+                    </div>
+                  </div>
                 </div>
 
-                <div class="skill-progress-bg">
-                  <div class="skill-progress-fill" style="width: 99%;"></div>
+                <div class="skill-card">
+                  <div class="skill-icon">
+                    <ion-icon name="logo-css3"></ion-icon>
+                  </div>
+                  <div class="skill-content">
+                    <h5 class="skill-name">CSS3</h5>
+                    <div class="skill-level">
+                      <div class="skill-bar">
+                        <div class="skill-progress" data-width="90%"></div>
+                      </div>
+                      <span class="skill-percentage">90%</span>
+                    </div>
+                  </div>
                 </div>
 
-              </li>
-
-              <li class="skills-item">
-
-                <div class="title-wrapper">
-                  <h5 class="h5">JavaScript</h5>
-                  <data value="89">89%</data>
+                <div class="skill-card">
+                  <div class="skill-icon">
+                    <ion-icon name="logo-javascript"></ion-icon>
+                  </div>
+                  <div class="skill-content">
+                    <h5 class="skill-name">JavaScript (ES6+)</h5>
+                    <div class="skill-level">
+                      <div class="skill-bar">
+                        <div class="skill-progress" data-width="88%"></div>
+                      </div>
+                      <span class="skill-percentage">88%</span>
+                    </div>
+                  </div>
                 </div>
 
-                <div class="skill-progress-bg">
-                  <div class="skill-progress-fill" style="width: 89%;"></div>
+                <div class="skill-card">
+                  <div class="skill-icon">
+                    <ion-icon name="logo-react"></ion-icon>
+                  </div>
+                  <div class="skill-content">
+                    <h5 class="skill-name">React.js</h5>
+                    <div class="skill-level">
+                      <div class="skill-bar">
+                        <div class="skill-progress" data-width="85%"></div>
+                      </div>
+                      <span class="skill-percentage">85%</span>
+                    </div>
+                  </div>
                 </div>
 
-              </li>
-              <li class="skills-item">
-
-                <div class="title-wrapper">
-                  <h5 class="h5">C/C++</h5>
-                  <data value="75">75%</data>
+                <div class="skill-card">
+                  <div class="skill-icon">
+                    <ion-icon name="layers-outline"></ion-icon>
+                  </div>
+                  <div class="skill-content">
+                    <h5 class="skill-name">Redux</h5>
+                    <div class="skill-level">
+                      <div class="skill-bar">
+                        <div class="skill-progress" data-width="80%"></div>
+                      </div>
+                      <span class="skill-percentage">80%</span>
+                    </div>
+                  </div>
                 </div>
 
-                <div class="skill-progress-bg">
-                  <div class="skill-progress-fill" style="width: 89%;"></div>
+                <div class="skill-card">
+                  <div class="skill-icon">
+                    <ion-icon name="phone-portrait-outline"></ion-icon>
+                  </div>
+                  <div class="skill-content">
+                    <h5 class="skill-name">Responsive Design</h5>
+                    <div class="skill-level">
+                      <div class="skill-bar">
+                        <div class="skill-progress" data-width="92%"></div>
+                      </div>
+                      <span class="skill-percentage">92%</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Backend Development -->
+            <div class="skill-category">
+              <div class="category-header">
+                <div class="category-icon">
+                  <ion-icon name="server-outline"></ion-icon>
+                </div>
+                <h4 class="category-title">Backend Development</h4>
+              </div>
+              <div class="skills-grid">
+                <div class="skill-card">
+                  <div class="skill-icon">
+                    <ion-icon name="logo-nodejs"></ion-icon>
+                  </div>
+                  <div class="skill-content">
+                    <h5 class="skill-name">Node.js</h5>
+                    <div class="skill-level">
+                      <div class="skill-bar">
+                        <div class="skill-progress" data-width="85%"></div>
+                      </div>
+                      <span class="skill-percentage">85%</span>
+                    </div>
+                  </div>
                 </div>
 
-              </li>
-
-              <li class="skills-item">
-
-                <div class="title-wrapper">
-                  <h5 class="h5">React.Js</h5>
-                  <data value="90">98%</data>
+                <div class="skill-card">
+                  <div class="skill-icon">
+                    <ion-icon name="logo-mongodb"></ion-icon>
+                  </div>
+                  <div class="skill-content">
+                    <h5 class="skill-name">MongoDB</h5>
+                    <div class="skill-level">
+                      <div class="skill-bar">
+                        <div class="skill-progress" data-width="82%"></div>
+                      </div>
+                      <span class="skill-percentage">82%</span>
+                    </div>
+                  </div>
                 </div>
 
-                <div class="skill-progress-bg">
-                  <div class="skill-progress-fill" style="width: 98%;"></div>
+                <div class="skill-card">
+                  <div class="skill-icon">
+                    <ion-icon name="flash-outline"></ion-icon>
+                  </div>
+                  <div class="skill-content">
+                    <h5 class="skill-name">Express.js</h5>
+                    <div class="skill-level">
+                      <div class="skill-bar">
+                        <div class="skill-progress" data-width="80%"></div>
+                      </div>
+                      <span class="skill-percentage">80%</span>
+                    </div>
+                  </div>
                 </div>
 
-              </li>
+                <div class="skill-card">
+                  <div class="skill-icon">
+                    <ion-icon name="link-outline"></ion-icon>
+                  </div>
+                  <div class="skill-content">
+                    <h5 class="skill-name">RESTful APIs</h5>
+                    <div class="skill-level">
+                      <div class="skill-bar">
+                        <div class="skill-progress" data-width="88%"></div>
+                      </div>
+                      <span class="skill-percentage">88%</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
 
-              <li class="skills-item">
-
-                <div class="title-wrapper">
-                  <h5 class="h5">Bootstrap</h5>
-                  <data value="50">90%</data>
+            <!-- Design & UI/UX -->
+            <div class="skill-category">
+              <div class="category-header">
+                <div class="category-icon">
+                  <ion-icon name="color-palette-outline"></ion-icon>
+                </div>
+                <h4 class="category-title">Design & UI/UX</h4>
+              </div>
+              <div class="skills-grid">
+                <div class="skill-card">
+                  <div class="skill-icon">
+                    <ion-icon name="create-outline"></ion-icon>
+                  </div>
+                  <div class="skill-content">
+                    <h5 class="skill-name">Figma</h5>
+                    <div class="skill-level">
+                      <div class="skill-bar">
+                        <div class="skill-progress" data-width="90%"></div>
+                      </div>
+                      <span class="skill-percentage">90%</span>
+                    </div>
+                  </div>
                 </div>
 
-                <div class="skill-progress-bg">
-                  <div class="skill-progress-fill" style="width: 90%;"></div>
+                <div class="skill-card">
+                  <div class="skill-icon">
+                    <ion-icon name="brush-outline"></ion-icon>
+                  </div>
+                  <div class="skill-content">
+                    <h5 class="skill-name">UI/UX Design</h5>
+                    <div class="skill-level">
+                      <div class="skill-bar">
+                        <div class="skill-progress" data-width="85%"></div>
+                      </div>
+                      <span class="skill-percentage">85%</span>
+                    </div>
+                  </div>
                 </div>
 
-              </li>
-
-              <li class="skills-item">
-
-                <div class="title-wrapper">
-                  <h5 class="h5">Tailwind CSS</h5>
-                  <data value="50">85%</data>
+                <div class="skill-card">
+                  <div class="skill-icon">
+                    <ion-icon name="library-outline"></ion-icon>
+                  </div>
+                  <div class="skill-content">
+                    <h5 class="skill-name">Tailwind CSS</h5>
+                    <div class="skill-level">
+                      <div class="skill-bar">
+                        <div class="skill-progress" data-width="88%"></div>
+                      </div>
+                      <span class="skill-percentage">88%</span>
+                    </div>
+                  </div>
                 </div>
 
-                <div class="skill-progress-bg">
-                  <div class="skill-progress-fill" style="width: 85%;"></div>
+                <div class="skill-card">
+                  <div class="skill-icon">
+                    <ion-icon name="construct-outline"></ion-icon>
+                  </div>
+                  <div class="skill-content">
+                    <h5 class="skill-name">Prototyping</h5>
+                    <div class="skill-level">
+                      <div class="skill-bar">
+                        <div class="skill-progress" data-width="82%"></div>
+                      </div>
+                      <span class="skill-percentage">82%</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Tools & Technologies -->
+            <div class="skill-category">
+              <div class="category-header">
+                <div class="category-icon">
+                  <ion-icon name="hammer-outline"></ion-icon>
+                </div>
+                <h4 class="category-title">Tools & Technologies</h4>
+              </div>
+              <div class="skills-grid">
+                <div class="skill-card">
+                  <div class="skill-icon">
+                    <ion-icon name="code-working-outline"></ion-icon>
+                  </div>
+                  <div class="skill-content">
+                    <h5 class="skill-name">VS Code</h5>
+                    <div class="skill-level">
+                      <div class="skill-bar">
+                        <div class="skill-progress" data-width="95%"></div>
+                      </div>
+                      <span class="skill-percentage">95%</span>
+                    </div>
+                  </div>
                 </div>
 
-              </li>
-              <li class="skills-item">
-
-                <div class="title-wrapper">
-                  <h5 class="h5"> Material-UI</h5>
-                  <data value="50">90%</data>
+                <div class="skill-card">
+                  <div class="skill-icon">
+                    <ion-icon name="logo-github"></ion-icon>
+                  </div>
+                  <div class="skill-content">
+                    <h5 class="skill-name">GitHub</h5>
+                    <div class="skill-level">
+                      <div class="skill-bar">
+                        <div class="skill-progress" data-width="90%"></div>
+                      </div>
+                      <span class="skill-percentage">90%</span>
+                    </div>
+                  </div>
                 </div>
 
-                <div class="skill-progress-bg">
-                  <div class="skill-progress-fill" style="width: 90%;"></div>
+                <div class="skill-card">
+                  <div class="skill-icon">
+                    <ion-icon name="cloud-outline"></ion-icon>
+                  </div>
+                  <div class="skill-content">
+                    <h5 class="skill-name">Vercel</h5>
+                    <div class="skill-level">
+                      <div class="skill-bar">
+                        <div class="skill-progress" data-width="85%"></div>
+                      </div>
+                      <span class="skill-percentage">85%</span>
+                    </div>
+                  </div>
                 </div>
 
-              </li>
-              <li class="skills-item">
-
-                <div class="title-wrapper">
-                  <h5 class="h5"> Figma (UI/UX design)</h5>
-                  <data value="50">88%</data>
+                <div class="skill-card">
+                  <div class="skill-icon">
+                    <ion-icon name="people-outline"></ion-icon>
+                  </div>
+                  <div class="skill-content">
+                    <h5 class="skill-name">Team Collaboration</h5>
+                    <div class="skill-level">
+                      <div class="skill-bar">
+                        <div class="skill-progress" data-width="92%"></div>
+                      </div>
+                      <span class="skill-percentage">92%</span>
+                    </div>
+                  </div>
                 </div>
+              </div>
+            </div>
 
-                <div class="skill-progress-bg">
-                  <div class="skill-progress-fill" style="width: 88%;"></div>
-                </div>
-
-              </li>
-
-            </ul>
-            <ul class="skills-list content-card">
-
-              <li class="skills-item">
-
-                <div class="title-wrapper">
-                  <h5 class="h5">Git/Github</h5>
-                  <data value="80">90%</data>
-                </div>
-
-                <div class="skill-progress-bg">
-                  <div class="skill-progress-fill" style="width: 90%;"></div>
-                </div>
-
-              </li>
-
-
-
-            </ul>
           </div>
-
         </section>
+
+
 
       </article>
 
@@ -742,7 +956,7 @@
       <article class="portfolio" data-page="portfolio">
 
         <header>
-          <h2 class="h2 article-title">Portfolio</h2>
+          <h2 class="h2 article-title">Projects</h2>
         </header>
 
         <section class="projects">
@@ -984,6 +1198,56 @@
           </ul>
 
         </section>
+
+        <!--
+          - project modal
+        -->
+
+        <div class="project-modal-container" data-project-modal-container>
+
+          <div class="project-overlay" data-project-overlay></div>
+
+          <section class="project-modal">
+
+            <button class="project-modal-close-btn" data-project-modal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+            <div class="project-modal-content">
+
+              <div class="project-modal-img-wrapper">
+                <figure class="project-modal-img-box">
+                  <img src="" alt="project image" data-project-modal-img>
+                </figure>
+              </div>
+
+              <div class="project-modal-info">
+                <h3 class="project-modal-title" data-project-modal-title>Project Title</h3>
+                <p class="project-modal-category" data-project-modal-category>Category</p>
+                <div class="project-modal-description" data-project-modal-description>
+                  <p>Project description will go here...</p>
+                </div>
+                <div class="project-modal-tech" data-project-modal-tech>
+                  <h4>Technologies Used:</h4>
+                  <ul class="tech-list"></ul>
+                </div>
+                <div class="project-modal-links">
+                  <a href="#" class="project-link-btn" data-project-live-link target="_blank">
+                    <ion-icon name="globe-outline"></ion-icon>
+                    <span>Live Demo</span>
+                  </a>
+                  <a href="#" class="project-link-btn" data-project-github-link target="_blank">
+                    <ion-icon name="logo-github"></ion-icon>
+                    <span>GitHub</span>
+                  </a>
+                </div>
+              </div>
+
+            </div>
+
+          </section>
+
+        </div>
 
       </article>
 
