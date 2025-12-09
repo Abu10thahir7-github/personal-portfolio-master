@@ -155,7 +155,27 @@ const projectData = {
     description:
       'A comprehensive food delivery web application built with modern web technologies. Features include user authentication, restaurant listings, menu browsing, cart management, order tracking, and payment integration.',
     technologies: ['React.js', 'Node.js', 'Express.js', 'MongoDB', 'Stripe API', 'JWT', 'CSS3'],
-    liveLink: '#',
+    liveLink: '#', // Add your live demo URL here
+    githubLink: '#',
+  },
+  'talk-tower': {
+    title: 'Talk Tower',
+    category: 'Web Development',
+    image: './assets/images/talk tower mockup.svg',
+    description:
+      'A modern communication platform built with cutting-edge web technologies. Features real-time messaging, user authentication, and seamless user experience.',
+    technologies: ['React.js', 'Node.js', 'Express.js', 'MongoDB', 'Socket.io', 'CSS3'],
+    liveLink: 'https://talk-tower.vercel.app/',
+    githubLink: '#',
+  },
+  'flyocean-travels': {
+    title: 'Flyocean Travels',
+    category: 'Web Development',
+    image: './assets/images/Flyocean moockkup.svg',
+    description:
+      'A modern communication platform built with cutting-edge web technologies. Features real-time messaging, user authentication, and seamless user experience.',
+    technologies: ['React.js', 'Node.js', 'Express.js', 'MongoDB', 'Socket.io', 'CSS3'],
+    liveLink: 'https://www.flyoceantravel.com/',
     githubLink: '#',
   },
   fundo: {
@@ -165,7 +185,7 @@ const projectData = {
     description:
       'A modern and responsive web design for a financial services platform. The design focuses on user experience with clean layouts, intuitive navigation, and mobile-first approach.',
     technologies: ['HTML5', 'CSS3', 'JavaScript', 'Figma', 'Responsive Design'],
-    liveLink: '#',
+    liveLink: '#', // Add your live demo URL here
     githubLink: '#',
   },
   'trendzio-shop': {
@@ -175,7 +195,7 @@ const projectData = {
     description:
       'An e-commerce website design for a trendy fashion store. Features modern UI/UX design with product showcases, shopping cart functionality, and seamless user experience.',
     technologies: ['HTML5', 'CSS3', 'JavaScript', 'Figma', 'UI/UX Design'],
-    liveLink: '#',
+    liveLink: '#', // Add your live demo URL here
     githubLink: '#',
   },
   'bismi-events': {
@@ -185,7 +205,7 @@ const projectData = {
     description:
       'A complete event management platform with booking system, event listings, and admin dashboard. Built with full-stack technologies for seamless event planning and management.',
     technologies: ['React.js', 'Node.js', 'Express.js', 'MongoDB', 'Material-UI', 'Redux'],
-    liveLink: '#',
+    liveLink: '#', // Add your live demo URL here
     githubLink: '#',
   },
   brawlhalla: {
@@ -276,7 +296,7 @@ const populateProjectModal = function (projectKey) {
     techList.appendChild(li);
   });
 
-  // Set links
+  // Set links - these will open in new tab due to target="_blank" in HTML
   projectLiveLink.href = project.liveLink;
   projectGithubLink.href = project.githubLink;
 };
@@ -286,6 +306,10 @@ const getProjectKey = function (projectTitle) {
   switch (projectTitle) {
     case 'velonto food delivery':
       return 'velonto-food-delivery';
+    case 'talk tower':
+      return 'talk-tower';
+    case 'flyocean travels':
+      return 'flyocean-travels';
     case 'fundo':
       return 'fundo';
     case 'terndzio shop':
@@ -457,7 +481,6 @@ function createDynamicParticles() {
 }
 
 // Mouse Follower Effect
- 
 
 // Scroll-triggered animations
 function initScrollAnimations() {
@@ -517,3 +540,95 @@ style.textContent = `
   }
 `;
 document.head.appendChild(style);
+
+// Pricing expand/collapse functionality
+const pricingMoreButtons = document.querySelectorAll('[data-pricing-more-btn]');
+
+// Add click event to all "More" buttons
+pricingMoreButtons.forEach(button => {
+  button.addEventListener('click', function (e) {
+    e.preventDefault();
+    e.stopPropagation();
+
+    // Find the parent pricing card
+    const pricingCard = this.closest('[data-pricing-card]');
+    if (pricingCard) {
+      // Toggle expanded class on the card
+      pricingCard.classList.toggle('expanded');
+
+      // Change button text
+      if (pricingCard.classList.contains('expanded')) {
+        this.textContent = 'Less';
+      } else {
+        this.textContent = 'More';
+      }
+    }
+  });
+});
+
+// Pricing Get Started - WhatsApp functionality
+const pricingButtons = document.querySelectorAll('[data-pricing-btn]');
+const whatsappNumber = '918921966289'; // Phone number without + and spaces
+
+// Function to collect pricing plan information
+const getPricingPlanInfo = function (pricingCard) {
+  const planName = pricingCard.querySelector('.pricing-plan').textContent;
+  const priceAmount = pricingCard.querySelector('.price-amount').textContent;
+  const pricePeriod = pricingCard.querySelector('.price-period').textContent;
+  const featuresList = pricingCard.querySelector('.pricing-features');
+  const allFeatures = featuresList.querySelectorAll('li');
+
+  // Collect all feature texts
+  const features = [];
+  allFeatures.forEach(feature => {
+    const featureText = feature.querySelector('span').textContent;
+    features.push(`✓ ${featureText}`);
+  });
+
+  return {
+    planName,
+    priceAmount,
+    pricePeriod,
+    features,
+  };
+};
+
+// Function to format WhatsApp message
+const formatWhatsAppMessage = function (planInfo) {
+  let message = `Hello! 👋\n\n`;
+  message += `I'm interested in your *${planInfo.planName}* plan.\n\n`;
+  message += `*Plan Details:*\n`;
+  message += `Plan: ${planInfo.planName}\n`;
+  message += `Price: ${planInfo.priceAmount}${planInfo.pricePeriod}\n\n`;
+  message += `*Features Included:*\n`;
+  planInfo.features.forEach(feature => {
+    message += `${feature}\n`;
+  });
+  message += `\nPlease let me know more details and availability.`;
+
+  return encodeURIComponent(message);
+};
+
+// Add click event to all "Get Started" buttons
+pricingButtons.forEach(button => {
+  button.addEventListener('click', function (e) {
+    e.preventDefault();
+    e.stopPropagation();
+
+    // Find the parent pricing card
+    const pricingCard = this.closest('[data-pricing-card]');
+    if (pricingCard) {
+      // Get pricing plan information
+      const planInfo = getPricingPlanInfo(pricingCard);
+
+      // Format WhatsApp message
+      const message = formatWhatsAppMessage(planInfo);
+
+      // Create WhatsApp URL
+      const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${message}`;
+
+      // Open WhatsApp in a new tab/window
+      window.open(whatsappUrl, '_blank');
+    }
+  });
+});
